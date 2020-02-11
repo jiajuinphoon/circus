@@ -21,6 +21,7 @@ public class Circus {
         for (Equipment e : equipments) {
             if (e.getValue() <= 5) {
                 System.out.println("Ignoring low value item: " + e.getValue());
+                continue;
             } else {
                 total += e.getValue();
                 System.out.println("Adding item value: " + e.getValue());
